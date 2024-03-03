@@ -49,12 +49,12 @@ main {
     width: 50%;
     height: 100%;
     border-radius: inherit;
-    padding: 25px 40px;
+    padding: 30px;
     color: var(--color-white);
     background: linear-gradient(var(--gradient-slateBlue)5%, var(--gradient-royalBlue)95%);
     display: flex; 
     flex-direction: column;
-    justify-content: space-evenly;
+    gap: 20px;
     align-items: center;
     text-align: center;
 }
@@ -62,18 +62,25 @@ main {
 .right {
     width: 50%;
     height: 100%;
-    padding: 20px;
+    padding: 30px;
     display: flex; 
     flex-direction: column;
-    align-items: center;
-    text-align: center;
+    justify-content: space-between;
+}
+
+header {
+    opacity: 0.8;
 }
 
 #circle {
-    width: 70%;
-    height: 40%;
+    width: 65%;
+    height: 45%;
+    margin: 10px 0;
     border-radius: 50%;
     background-image: linear-gradient(var(--gradient-violetBlue)40%, var(--gradient-persianBlue));
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 h1 {
@@ -82,7 +89,50 @@ h1 {
 
 .small {
     font-size: 14px;
-    color: gray;
+    opacity: 0.4;
     letter-spacing: 1px;
     display: block;
+}
+
+p {
+    font-size: 14px;
+    opacity: 0.8;
+    width: 80%;
+    margin-top: -5px;
+}
+
+table tr {
+    width: 100%;
+    margin: 10px 0;
+    display: flex;
+    flex-direction: row;  
+    justify-content: space-around;
+    padding-block: 12px;
+    border-radius: 10px;
+}
+
+.red {
+    background-color: var(--color-lightRed); 
+}
+
+.orange {
+    background-color: var(--color-orangeyYellow);
+}
+
+.green {
+    background-color: var(--color-greenTeal);
+}
+
+.blue {
+    background-color: var(--color-cobaltBlue);
+}
+
+button {
+    background-color: var(--color-GrayBlue);
+    border: none;
+    border-radius: 20px;
+    font-family: sans-serif;
+    color: var(--color-white);
+    font-size: 16px;
+    padding-block: 12px;
 }
