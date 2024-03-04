@@ -41,13 +41,13 @@ body {
 
 main {
     margin: auto;
-    max-width: 800px;
+    max-width: 720px;
     height: 500px;
     border-radius: 7%;
     background-color: var(--color-white);
     display: flex;
     align-items: center;
-    box-shadow: 8px 8px 40px lightgray;
+    box-shadow: 5px 5px 25px hsl(0, 0%, 83%, 0.5);
 }
 
 .left {
@@ -56,25 +56,26 @@ main {
     border-radius: inherit;
     padding: 40px;
     color: var(--color-white);
-    background: linear-gradient(var(--gradient-slateBlue)5%, var(--gradient-royalBlue)95%);
+    background: linear-gradient(var(--gradient-slateBlue)5%, var(--gradient-royalBlue));
     display: flex; 
     flex-direction: column;
-    row-gap: 20px;
+    justify-content: space-evenly;
     align-items: center;
     text-align: center;
 }
 
 header {
     font-size: 22px;
-    opacity: 0.8;
+    font-weight: 700;
+    opacity: 0.7;
+    margin: -10px 0 15px;
 }
 
 #circle {
-    width: 60%;
+    width: 70%;
     height: 45%;
-    margin: 10px 0;
     border-radius: 50%;
-    background-image: linear-gradient(var(--gradient-violetBlue)40%, var(--gradient-persianBlue));
+    background-image: linear-gradient(var(--gradient-violetBlue)5%, var(--gradient-persianBlue));
     display: flex;
     align-items: center;
     justify-content: center;
@@ -93,8 +94,7 @@ h2 {font-size: 30px;}
 
 p {
     opacity: 0.8;
-    width: 80%;
-    margin-top: -5px;
+    max-width: 90%; 
 }
 
 .right {
@@ -103,10 +103,14 @@ p {
     padding: 40px;
     display: flex; 
     flex-direction: column;
-    row-gap: 15px;
+    justify-content: space-evenly;
 }
 
-h3 {color: var(--color-GrayBlue); font-size: 22px;}
+h3 {
+    color: var(--color-GrayBlue);
+    font-size: 22px;
+    font-weight: 700;
+}
 
 svg {
     vertical-align: top;
@@ -135,6 +139,11 @@ td {
 .green {color: var(--color-greenTeal);}
 .blue {color: var(--color-cobaltBlue);}
 
+tr:nth-child(1) {background-color: hsl(0, 100%, 67%, 0.05);}
+tr:nth-child(2) {background-color: hsl(39, 100%, 56%, 0.05);}
+tr:nth-child(3) {background-color: hsl(166, 100%, 37%, 0.05);}
+tr:nth-child(4) {background-color: hsl(234, 85%, 45%, 0.05);}
+
 button {
     background-color: var(--color-GrayBlue);
     border: none;
@@ -143,5 +152,14 @@ button {
     color: var(--color-white);
     font-size: inherit;
     padding-block: 15px;
-    margin-top: 10px;
+    margin-top: 20px;
+}
+
+button:hover {
+    cursor: pointer;
+    background: linear-gradient(var(--gradient-slateBlue)5%, var(--gradient-royalBlue));
+}
+
+@media (max-width: 650px) {
+
 }
