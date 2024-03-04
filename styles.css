@@ -74,7 +74,7 @@ header {
     width: 200px;
     height: 200px;
     border-radius: 50%;
-    background-image: linear-gradient(var(--gradient-violetBlue)50%, var(--gradient-persianBlue));
+    background-image: linear-gradient(var(--gradient-violetBlue), var(--gradient-persianBlue));
     display: flex;
     align-items: center;
     justify-content: center;
